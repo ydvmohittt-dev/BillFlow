@@ -1,0 +1,10 @@
+import express from "express";
+import auth from "../middleware/auth.js";
+import { list, getOne, create, updateStatus } from "../controllers/invoiceController.js";
+const router = express.Router();
+router.use(auth);
+router.get("/", list);
+router.post("/", create);
+router.get("/:id", getOne);
+router.patch("/:id/status", updateStatus);
+export default router;
