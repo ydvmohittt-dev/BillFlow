@@ -73,7 +73,10 @@ export default function ClientForm() {
           </label>
           <label>
             Phone
-            <input {...register("phone", { required: "Phone is required" })} placeholder="Enter contact number" />
+            <input  {...register("phone", { required: "Phone is required" ,pattern: {
+      value: /^\+?[0-9\s()-]+$/,
+      message: "Please enter a valid phone number",
+    }  })} placeholder="Enter contact number" />
           </label>
           <label>
             Billing address
