@@ -12,13 +12,13 @@ const app = express();
 const port = process.env.PORT || 5000;
 app.use(
   cors({
-    origin: "https://billflow-project.onrender.com",
+    origin: "https://billflow-project.onrender.com/api",
     credentials: true,
   })
 );
 
 app.options("*", cors({
-  origin: "https://billflow-project.onrender.com",
+  origin: "https://billflow-project.onrender.com/api",
   credentials: true,
 }));
 
