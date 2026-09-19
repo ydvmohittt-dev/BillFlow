@@ -44,10 +44,7 @@ The project is built as a complete, production-style application: a REST API wit
 
 ## Screenshots
 
-<!--
-  Add your screenshots below by replacing the placeholder text with:
-  ![Description](./docs/screenshots/your-image.png)
--->
+
 
 **Register**
 
