@@ -155,6 +155,19 @@ a {
 .logout-btn:hover {
   color: #fff;
 }
+.logout-button{
+   border: 0;
+  background: none;
+    color: #595a5b;
+    border: none;
+  padding: 8px 4px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.logout-button:hover{
+color: black;
+}
 .main-area {
   margin-left: 244px;
   width: calc(100% - 244px);
@@ -866,6 +879,13 @@ tbody tr:last-child td {
   color: #375d9e;
   margin-bottom: 13px;
 }
+.setting-div{
+      display: flex;
+       width: 99%;
+    justify-content: space-between;
+    
+}
+
 .side-card h3 {
   font-family: Manrope;
   font-size: 14px;
