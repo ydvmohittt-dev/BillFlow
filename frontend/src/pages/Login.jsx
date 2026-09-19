@@ -11,8 +11,8 @@ export default function Login() {
     formState: { errors, isSubmitting },
   } = useForm({
     defaultValues: {
-      email: "raoshab2757@gmail.com",
-      password: "7206359853",
+      email: "",
+      password: "",
     },
   });
 
