@@ -1,5 +1,5 @@
 const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+  import.meta.env.VITE_API_URL || "https://billflow-project.onrender.com/api";
 
 export async function api(path, options = {}) {
   let token = localStorage.getItem("invoice_token");
