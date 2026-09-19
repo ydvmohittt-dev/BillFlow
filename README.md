@@ -49,6 +49,16 @@ The project is built as a complete, production-style application: a REST API wit
   ![Description](./docs/screenshots/your-image.png)
 -->
 
+**Register**
+
+![Register](./docs/screenshots/Register.png)
+
+
+**Login**
+
+![Dashboard](./docs/screenshots/Login.png)
+
+
 **Dashboard**
 
 ![Dashboard](./docs/screenshots/Dashboard.png)
