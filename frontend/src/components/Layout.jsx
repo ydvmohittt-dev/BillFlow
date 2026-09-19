@@ -1,4 +1,4 @@
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { getUser, clearSession } from "../api";
 import {
   LayoutDashboard,
@@ -67,7 +67,7 @@ export default function Layout() {
             onClick={() => setOpen(false)}
             aria-label="Close menu"
           >
-            <X size={20} />
+            <X size={15} />
           </button>
         </div>
 
@@ -106,15 +106,13 @@ export default function Layout() {
         <header className="topbar">
           <button
             className="icon-btn mobile-menu"
-            onClick={() => setOpen(true)}
+            onClick={() => setOpen(!open)}
             aria-label="Open menu"
           >
             <Menu size={21} />
           </button>
           <div className="topbar-spacer" />
-          <div className="avatar top-avatar">
-            {user?.name?.[0]?.toUpperCase() || "U"}
-          </div>
+            <button className="avatar top-avatar" onClick={()=>nav("/settings")}> {user?.name?.[0]?.toUpperCase() || "U"}</button>
         </header>
         <main>
           <Outlet />

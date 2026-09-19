@@ -177,6 +177,7 @@ a {
 .top-avatar {
   width: 30px;
   height: 30px;
+  border: none;
 }
 .mobile-menu,
 .mobile-close {
@@ -458,6 +459,7 @@ tbody tr:last-child td {
   border: 1px solid var(--line);
   background: #fff;
   color: #5c6673;
+      margin-left: 5px;
   border-radius: 7px;
   display: inline-grid;
   place-items: center;
@@ -895,6 +897,7 @@ tbody tr:last-child td {
 
 .settings-card {
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 .settings-head {
   display: flex;
