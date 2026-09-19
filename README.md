@@ -53,17 +53,24 @@ The project is built as a complete, production-style application: a REST API wit
 
 ![Dashboard](./docs/screenshots/Dashboard.png)
 
+
+
 **Invoice Workspace**
 
 ![Invoices](./docs/screenshots/Invoices.png)
+
+
 
 **Create Invoice**
 
 ![Create Invoice](./docs/screenshots/CreateInvoice.png)
 
+
+
 **Invoice Detail View**
 
 ![Invoice Detail](./docs/screenshots/Invoice.png)
+
 
 **Client Management**
 
