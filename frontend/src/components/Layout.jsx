@@ -88,9 +88,9 @@ export default function Layout() {
 
         <div className="sidebar-bottom">
           <div className="account-mini">
-            <div className="avatar">
-              {user?.name?.[0]?.toUpperCase() || "U"}
-            </div>
+            
+               <button className="avatar" onClick={()=>nav("/settings")}> {user?.name?.[0]?.toUpperCase() || "U"}</button>
+          
             <div className="account-copy">
               <strong>{user?.name}</strong>
               <span>{user?.email}</span>

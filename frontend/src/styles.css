@@ -122,6 +122,7 @@ a {
   border-radius: 50%;
   background: #dce5f8;
   color: #244f9e;
+  border:none;
   display: grid;
   place-items: center;
   font-weight: 700;
@@ -851,6 +852,7 @@ tbody tr:last-child td {
 .side-card {
   background: #fff;
   border: 1px solid var(--line);
+  margin-top: 60px;
   border-radius: 10px;
   padding: 18px;
 }

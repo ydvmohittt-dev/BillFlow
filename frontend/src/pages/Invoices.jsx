@@ -122,7 +122,7 @@ export default function Invoices() {
                   <th>Due</th>
                   <th>Amount</th>
                   <th>Status</th>
-                  <th></th>
+                  <th>View</th>
                 </tr>
               </thead>
               <tbody>
