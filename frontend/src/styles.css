@@ -168,6 +168,8 @@ a {
 .logout-button:hover{
 color: black;
 }
+
+
 .main-area {
   margin-left: 244px;
   width: calc(100% - 244px);

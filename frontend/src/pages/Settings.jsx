@@ -1,5 +1,5 @@
 import { getUser ,clearSession } from "../api";
-import { LogOut } from "lucide-react";
+import { Eye, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 export default function Settings() {
   const nav =useNavigate();
@@ -21,11 +21,12 @@ const logout = () => {
             <div className="Setting-detail"><h2>{user?.name}</h2>
             <p>{user?.email}</p>
             </div>
+           
             
-            <div className=" setting-logout"></div>
               <button className="logout-button" onClick={logout}>
-            <LogOut size={12} /> Sign out
+            <LogOut size={15} /> Sign out
           </button>
+          
           </div>
         </div>
       </section>
