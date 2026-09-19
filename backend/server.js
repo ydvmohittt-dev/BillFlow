@@ -10,17 +10,20 @@ import invoiceRoutes from "./routes/invoiceRoutes.js";
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://bill-flow-ashen.vercel.app",
+];
+
 app.use(
   cors({
-    origin: "https://billflow-project.onrender.com/api",
+    origin: allowedOrigins,
     credentials: true,
   })
 );
 
-app.options("*", cors({
-  origin: "https://billflow-project.onrender.com/api",
-  credentials: true,
-}));
 
 
 
