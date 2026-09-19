@@ -67,7 +67,7 @@ The project is built as a complete, production-style application: a REST API wit
 
 **Client Management**
 
-![Clients](./docs/screenshots/createclient.png)
+![Clients](./docs/screenshots/CreateClient.png)
 
 ---
 
