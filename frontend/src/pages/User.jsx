@@ -1,10 +1,17 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import { api } from "../api";
-import { ArrowLeft, Mail, Phone } from "lucide-react";
+import { clearSession } from "../api";
+import { ArrowLeft, Mail, Phone,LogOut,Users } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const User = () => {
+    const nav=useNavigate();
+    const logout = () => {
+    clearSession();
+    nav("/login");
+  };
   const [user, setUser] = useState([]);
   const [clients, setClients] = useState([]);
   const [error, setError] = useState("");
@@ -43,15 +50,23 @@ const User = () => {
       ) : (
         <>
           <section className="section-card settings-card">
-            <div className="settings-head">
-              <div className="avatar large">
-                {user?.name?.[0]?.toUpperCase()}
-              </div>
-              <div>
-                <h2>{user?.name}</h2>
-                <p>{user?.email}</p>
-              </div>
+              <div className="settings-head">
+          <div className="avatar large">{user?.name?.[0]?.toUpperCase()}</div>
+          <div className="setting-div">
+            <div className="Setting-detail"><h2>{user?.name}</h2>
+            <p>{user?.email}</p>
             </div>
+           
+            
+             
+              <button className="logout-button" onClick={logout}>
+            <LogOut size={15} /> Sign out
+          </button>
+          
+              
+          
+          </div>
+        </div>
           </section>
 
           <section className="section-card">
@@ -100,7 +115,7 @@ const User = () => {
             ) : (
               <div className="empty-state">
                 <div className="empty-icon">
-                  <User size={22} />
+                  <Users size={22} />
                 </div>
                 <h3>No clients yet</h3>
                 <p>Add a client before creating your first invoice.</p>
