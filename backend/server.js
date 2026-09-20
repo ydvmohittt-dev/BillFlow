@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import authRoutes from "./routes/authRoutes.js";
 import clientRoutes from "./routes/clientRoutes.js";
 import invoiceRoutes from "./routes/invoiceRoutes.js";
-
+import userRoutes from "./routes/userRoutes.js"
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -35,6 +35,7 @@ app.get("/api/health", (req, res) => res.json({ status: "ok" }));
 app.use("/api/auth", authRoutes);
 app.use("/api/clients", clientRoutes);
 app.use("/api/invoices", invoiceRoutes);
+app.use("/api/user",userRoutes);
 
 
 mongoose.connect(process.env.MONGODB_URI)

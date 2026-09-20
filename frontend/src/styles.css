@@ -155,9 +155,15 @@ a {
 .logout-btn:hover {
   color: #fff;
 }
+.view-logout{
+  width: 30%;
+  display:flex;
+  justify-content: space-between;
+}
 .logout-button{
    border: 0;
   background: none;
+    
     color: #595a5b;
     border: none;
   padding: 8px 4px;
@@ -167,6 +173,20 @@ a {
 }
 .logout-button:hover{
 color: black;
+}
+.view-button{
+    border: 0;
+  background: none;
+    
+    color: #595a5b;
+    border: none;
+  padding: 8px 4px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.view-button:hover{
+  color: black;
 }
 
 

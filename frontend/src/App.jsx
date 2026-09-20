@@ -10,7 +10,7 @@ import Invoices from "./pages/Invoices";
 import InvoiceForm from "./pages/InvoiceForm";
 import InvoiceDetails from "./pages/InvoiceDetails";
 import Settings from "./pages/Settings";
-
+import User from "./pages/User";
 const router = createBrowserRouter([
   { path: "/login", element: <Login /> },
   { path: "/register", element: <Register /> },
@@ -30,6 +30,7 @@ const router = createBrowserRouter([
       { path: "invoices/new", element: <InvoiceForm /> },
       { path: "invoices/:id", element: <InvoiceDetails /> },
       { path: "settings", element: <Settings /> },
+       { path: "settings/user", element: <User /> },
     ],
   },
 ]);

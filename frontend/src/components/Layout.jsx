@@ -40,6 +40,7 @@ export default function Layout() {
     ["/invoices", "Invoices", FileText],
     ["/invoices/new", "Create invoice", Plus],
     ["/settings", "Settings", Settings],
+    
   ];
 
   const logout = () => {

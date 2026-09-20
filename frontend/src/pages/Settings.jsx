@@ -22,10 +22,15 @@ const logout = () => {
             <p>{user?.email}</p>
             </div>
            
-            
+            <div className="view-logout">
+               <button className="view-button" onClick={()=>nav("/settings/user")} >
+            <Eye size={15} /> View
+          </button>
               <button className="logout-button" onClick={logout}>
             <LogOut size={15} /> Sign out
           </button>
+            </div>
+              
           
           </div>
         </div>
