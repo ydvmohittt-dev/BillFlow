@@ -14,7 +14,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-**🔗 Live App:** [bill-flow-ashen.vercel.app](https://bill-flow-ashen.vercel.app) &nbsp;·&nbsp; **⚙️ API:** [billflow-project.onrender.com](https://billflow-project.onrender.com/api)
+**🔗 Live App:** [bill-flow-ashen.vercel.app](https://bill-flow-ashen.vercel.app) &nbsp;·&nbsp; **⚙️ API:** [billflow-project.onrender.com](https://billflow-project.onrender.com/)
 
 ---
 
